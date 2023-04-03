@@ -1,0 +1,243 @@
+.form-calculator-container {
+	background-color: #f1f1f1;
+	padding-top: 5px;
+  	max-width: 700px;
+}
+
+.form-calculator-container img {
+    height: 25px;
+    width: 25px;
+}
+
+.form-calculator-title {
+    font-weight: 700;
+	font-size: 30px;
+	margin: 18px 0;
+	color: #212121;
+}
+
+.form-calculator-desc {
+	font-size: 15px;
+	color: #212121;
+}
+
+.form-calculator-btn-delete,
+.form-calculator-btn-clear,
+.form-calculator-btn-add {
+    background: none;
+	border: none;
+	padding: 0;
+	outline: inherit;
+}
+
+.form-calculator-btn-clear,
+.form-calculator-btn-add {
+	color: #004795;
+	font-size: 15px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.form-calculator-grid {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+  	column-gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-calculator-pad {
+    padding: 0 35px;
+}
+
+.form-calculator-gap {
+    margin: 0 35px;
+}
+
+.form-calculator-row label {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.form-calculator-row input {
+	font-size: 16px;
+	height: 32px;
+	padding: 2px 11px;
+	border: 1px solid #424242;
+}
+
+.form-calculator-row input:focus {
+	border: none;
+	outline: 2px solid #fdb81e !important;
+	outline-offset: 2px !important;
+	box-shadow: none !important;
+}
+
+.form-calculator-btn-delete {
+	opacity: 35%;
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	width: fit-content;
+}
+
+.form-calculator-btn-delete img {
+	margin-left: -5px;
+}
+
+.form-calc-btn-delete-active img {
+	filter: invert(25%) sepia(100%) hue-rotate(-200deg) saturate(5);
+}
+
+.form-calc-btn-delete-active span {
+	color: #004795;
+}
+
+.form-calculator-btns {
+	display: flex;
+	align-items: center;
+	padding-bottom: 40px;
+}
+
+.form-calculator-btn-add {
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 16px;
+}
+
+.form-calculator-btn-add img {
+	width: 20px;
+	height: 20px;
+	margin-right: 3px;
+	filter: invert(25%) sepia(100%) hue-rotate(-200deg) saturate(4);
+}
+
+button.form-calculator-btn-calc {
+	background-color: #0071bb;
+	font-weight: 600;
+	font-size: 15px;
+	color: #fafafa;
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	width: 110px;
+	max-width: 110px; /* Maximum width */
+	margin-right: 20px;
+    cursor: pointer;
+
+	/* Button text position - !important property may be necessary */
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.form-calculator-btn-calc:hover {
+	background-color: #003E73;
+}
+
+.form-calculator-btn-calc:focus {
+	outline: 2px solid #fdb81e;
+	outline-offset: 2px;
+}
+
+.form-calculator-btn-clear {
+	height: 25px;
+}
+
+.form-calculator-result-title {
+	font-weight: 700;
+	font-size: 16px;
+	color: #212121;
+	margin-top: -20px;
+	margin-bottom: 2px;
+}
+
+.form-calculator-result {
+	font-weight: 700;
+	font-size: 36px;
+	color: #212121;
+	margin-top: 0;
+	margin-bottom: 14px;
+}
+
+.form-calculator-info {
+	font-size: 16px;
+	color: #212121;
+	margin-top: 5px;
+}
+
+.form-calculator-result-link {
+	padding-bottom: 30px;
+}
+
+.form-calculator-result-link a {
+	font-size: 16px;
+	color: #004795;
+}
+
+.form-calculator-btn-delete:hover,
+.form-calculator-btn-add:hover,
+.form-calculator-btn-clear:hover,
+.form-calculator-result-link a:hover {
+	text-decoration: underline;
+	background-color: rgba(0,0,0,0.05);
+}
+
+.form-calculator-btn-delete:focus,
+.form-calculator-btn-add:focus,
+.form-calculator-btn-clear:focus,
+.form-calculator-result-link a:focus {
+	outline: 2px solid #fdb81e !important;
+	outline-offset: 2px !important;
+}
+
+.form-calculator-error-msg,
+.form-calculator-error-desc {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.form-calculator-error-msg {
+    color: #212121;
+    margin-bottom: 5px;
+}
+
+.form-calculator-error-desc {
+    color: #cd2026;
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+	.form-calculator-grid {
+		grid-template-columns: 35% 50% 15%;
+	}
+
+	.form-calculator-pad {
+		padding: 0 30px;
+	}
+
+	.form-calculator-title {
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	.form-calculator-grid span {
+		display: block;
+	}
+
+	span.form-calculator-label-increment {
+		display: none;
+	}
+
+	.form-calculator-btns {
+		padding-bottom: 40px;
+	}
+
+	.form-calculator-btn-delete span {
+		display: none;
+	}
+}
